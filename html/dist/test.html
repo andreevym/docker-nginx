@@ -1,0 +1,11 @@
+<template>
+  <require from="debug"></require>
+
+  <select value.bind="group.users[0] | userToId:userService.users">
+    <option repeat.for="user of userService.users" model.bind="user.id">
+      ${user.firstName} ${user.lastName}
+    </option>
+  </select>
+
+  <debug></debug>
+</template>

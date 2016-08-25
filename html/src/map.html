@@ -1,0 +1,14 @@
+<template>
+  <section >
+      <h2>${heading}</h2>
+          <table class="table">
+      <tbody>
+        <tr repeat.for="customer of customers">
+          <td> ${customer.name} </td>
+          <td> ${customer.website}</td>
+          <td> ${customer.email}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</template>

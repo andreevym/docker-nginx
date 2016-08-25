@@ -1,0 +1,32 @@
+<template>
+  <!--<div class="place-picker-map"></div>-->
+  <div id="map-div"></div>
+  <table id="js-table" class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <td> Icon </td>
+        <td> Contractor</td>
+        <td> Title </td>
+        <td> Email </td>
+        <td> Phone </td>
+        <td> Address </td>
+        <td> Website </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr repeat.for="customer of customers">
+        <td><img width= 25px; height: 25px; src=${customer.icon}></td>
+        <td> ${customer.name} </td>
+        <td> ${customer.title} </td>
+        <td> ${customer.email}</td>
+        <td> ${customer.phone}</td>
+        <td> ${customer.address}</td>
+        <td><a href="${customer.website}">
+          <div style="height:100%;width:100%">
+                <i class="glyphicon glyphicon-globe"></i>
+          </div>
+        </a></td>
+      </tr>
+    </tbody>
+  </table>
+</template>

@@ -1,0 +1,20 @@
+<template>
+<div class="ap">
+  <div class="panel panel-primary">
+    <div class="panel-heading">Online Users</div>
+    <div class="user-list-wrapper">
+      <div class="panel-body" repeat.for = "user of users">
+        <img  width="50" height="50" class="img-thumbnail" src=${user.picture}>
+         ${user.displayName}
+      </div>
+    </div>
+  </div>
+  <div class="apw">
+    <div id="messages"></div>
+    <div id="history"></div>
+    <form id="chat-form" action="">
+      <input id="m" autocomplete="off" /><button class="btn btn-primary btn-lg">Send</button>
+    </form>
+  </div>
+</div>
+<template>
