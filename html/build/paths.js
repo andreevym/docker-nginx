@@ -19,7 +19,7 @@ module.exports = {
   e2eSpecsDist: 'test/e2e/dist/',
   //change to 9000 for prod, 5000 dev
   //config.port
-  nodeJsPort: 9000,
+  nodeJsPort: 8080,
   webServerPort : 4000,
   serverBaseDir : serverBaseDir,
   nodeStartUpScriptPath : path.join( serverBaseDir,  nodeStartupScript)
