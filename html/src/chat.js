@@ -16,7 +16,7 @@ export class Chat {
     this.auth = auth;
     this.http = HttpClient;
     //localhost issue in production
-    this.socket = io.connect('http://localhost:5555');
+    this.socket = io.connect('/socket.io/');
     this.socket.on("list", (data) => {
       this.users = data.newList,
       this.oneUser = data.oneUser
